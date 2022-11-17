@@ -1,2 +1,2 @@
-# LoonConfig
-Loon Config
+# Config
+Some Config
