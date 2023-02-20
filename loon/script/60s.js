@@ -12,7 +12,6 @@ async function checkUpdate() {
         url: "https://api.vvhan.com/api/60s"
 
     }).then((resp) => resp.body);
-    alert(html);
     $.notify(
         `💡 每天60s读懂世界`,
         `⏰ 发布时间: ${formatTime(new Date())}`,
