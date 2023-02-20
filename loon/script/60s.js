@@ -2,6 +2,8 @@
  * 每天60s读懂世界
  * @author:
  * 更新地址:
+ * 数据来源: https://www.zhihu.com/column/c_1261258401923026944
+ * API来源: https://github.com/Hacker-C/60s
  */
 
 const $ = API("60s");
@@ -9,8 +11,9 @@ checkUpdate().then(() => $done());
 
 async function checkUpdate() {
     const html = await $.http.get({
-        url: "https://api.vvhan.com/api/60s"
+        //url: "https://api.vvhan.com/api/60s"
         //url: "https://60s-view.netlify.app"
+        url: "https://60s.viki.moe/?encoding=text"
     }).then((resp) => resp.body);
     $.notify(
         `💡 每天60s读懂世界`,
