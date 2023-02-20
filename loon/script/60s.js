@@ -10,7 +10,6 @@ checkUpdate().then(() => $done());
 async function checkUpdate() {
     const html = await $.http.get({
         url: "https://api.vvhan.com/api/60s"
-
     }).then((resp) => resp.body);
     $.notify(
         `💡 每天60s读懂世界`,
