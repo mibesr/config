@@ -16,23 +16,6 @@ async function checkUpdate() {
         `⏰ 发布时间: ${formatTime(new Date())}`,
         html
     );
-//    const itemRegex = new RegExp(/<item>[\s\S]*?<\/item>/g);
-//    html.match(itemRegex).forEach(async (item) => {
-//        let name = item.match(/<title><!\[CDATA\[([\s\S]*?)\]\]><\/title>/)[1];
-//        let url = item.match(/<link>([\s\S]*?)<\/link>/)[1];
-//        let imgurl = item.match(/<img src=\"(.*)\" referrerpolicy/)[1];
-//        let notificationURL = {
-//            "open-url": url,
-//            "media-url": imgurl
-//        }
-//        let time = item.match(/<pubDate>([\s\S]*?)<\/pubDate>/)[1];
-//        let description = item.match(/<p>([\s\S]*?)<\/p>/)[1];
-//        $.notify(
-//            `💡 每天60s读懂世界`,
-//            `⏰ 发布时间: ${formatTime(new Date())}`,
-//            notificationURL
-//        );
-//    });
 }
 
 function formatTime(timestamp) {
