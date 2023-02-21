@@ -23,8 +23,8 @@ async function checkUpdate() {
     $.notify(
         `💡 每天60s读懂世界`,
         `⏰ 发布时间: ${formatTime(new Date())}`,
-        html
-        notificationURL,  
+        html,
+        notificationURL
     );
 }
 
