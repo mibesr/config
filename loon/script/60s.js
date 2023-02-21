@@ -16,7 +16,7 @@ async function checkUpdate() {
         //url: "https://60s.viki.moe/?encoding=text",
         timeout: 10000, //请求超时，单位ms
         headers:{
-            Content-Type:"image/jpg"
+            "Content-Type":"image/jpg"
         },
     }).then((resp) => resp.body);
     let notificationURL = {
