@@ -11,24 +11,21 @@ checkUpdate().then(() => $done());
 
 async function checkUpdate() {
     const html = await $.http.get({
-        url: "https://api.vvhan.com/api/60s",
+        //url: "https://api.vvhan.com/api/60s",
         //url: "https://60s-view.netlify.app",
-        //url: "https://60s.viki.moe/?encoding=text",
-        timeout: 10000, //请求超时，单位ms
-        headers:{
-            "Content-Type":"image/jpg"
-        },
+        url: "https://60s.viki.moe/?encoding=text",
+        timeout: 8000, //请求超时，单位ms
     }).then((resp) => resp.body);
-//     let notificationURL = {
-//         "open-url": "https://api.vvhan.com/api/60s",
-//         "media-url": "https://api.vvhan.com/api/60s"
-//     }
+    let notificationURL = {
+        "open-url": "https://www.zhihu.com/column/c_1261258401923026944",
+        "media-url": "https://picx.zhimg.com/v2-54ac17bfe0f7603e6db243ee3ece993a_l.jpg"
+    }
     console.log(html)
     $.notify(
         `💡 每天60s读懂世界`,
         `⏰ 发布时间: ${formatTime(new Date())}`,
         html
-        //notificationURL,  
+        notificationURL,  
     );
 }
 
