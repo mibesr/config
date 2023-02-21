@@ -19,8 +19,7 @@ async function checkUpdate() {
     let notificationURL = {
         "open-url": "https://www.zhihu.com/column/c_1261258401923026944",
         "media-url": "https://picx.zhimg.com/v2-54ac17bfe0f7603e6db243ee3ece993a_l.jpg"
-    }
-    console.log(html)
+    };
     $.notify(
         `💡 每天60s读懂世界`,
         `⏰ 发布时间: ${formatTime(new Date())}`,
