@@ -13,7 +13,7 @@ async function checkUpdate() {
     const html = await $.http.get({
         //url: "https://api.vvhan.com/api/60s",
         //url: "https://60s-view.netlify.app",
-        url: "https://60s.viki.moe/?encoding=text",
+        url: "https://60s.viki.moe/?encoding=text"
     }).then((resp) => resp.body);
     let notificationURL = {
         "open-url": "https://www.zhihu.com/column/c_1261258401923026944",
