@@ -10,11 +10,11 @@ const $ = API("60s");
 checkUpdate().then(() => $done());
 
 async function checkUpdate() {
-    const html = await $.http.get({
+    //const html = await $.http.get({
         //url: "https://api.vvhan.com/api/60s",
         //url: "https://60s-view.netlify.app",
-        url: "https://60s.viki.moe/?encoding=text"
-    }).then((resp) => resp.body);
+        //url: "https://60s.viki.moe/?encoding=text"
+    //}).then((resp) => resp.body);
     let notificationURL = {
         "open-url": "https://www.zhihu.com/column/c_1261258401923026944",
         "media-url": "https://picx.zhimg.com/v2-54ac17bfe0f7603e6db243ee3ece993a_l.jpg"
@@ -22,7 +22,7 @@ async function checkUpdate() {
     $.notify(
         `💡 每天60s读懂世界`,
         `⏰ 发布时间: ${formatTime(new Date())}`,
-        html,
+        `请点击查看详细内容`,
         notificationURL
     );
 }
